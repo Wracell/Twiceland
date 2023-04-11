@@ -1,0 +1,86 @@
+body {
+  margin: 50px;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+a{
+  text-decoration: none;
+  margin-left: 130px;
+  font-weight: bold;
+  color: #000000;
+}
+a i{
+  margin-right: 5px;
+}
+button {
+  border: none;
+  background-color: lightblue;
+  color: #fff;
+  width: 100px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+form {
+  background-color: #f4f4f4;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px lightblue;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="username"],
+form input[type="password"],
+form input[type="date"],
+form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+form button[type="submit"],
+form button[type="reset"] {
+  display: inline-block;
+  background-color: lightblue;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+
+}
+
+form button[type="reset"] {
+  background-color: lightblue;
+}
+
+form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+  background-color: #004F99;
+}

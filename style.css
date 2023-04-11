@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: lightblue;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button a {
+  color: #fff;
+}
+
+button:hover {
+  background-color: #004F99;
+}
+
+header {
+  padding: 0;
+}
+
+nav {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  width: 50px;
+  margin-left: 20px;
+  height: auto;
+}
+
+nav ul {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 50px;
+}
+
+nav ul li:last-child {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  transition: all 0.3 ease;
+  padding: 10px;
+  background: #fff;
+  color: black;
+  border-radius: 5px;
+}
+
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: auto;
+  background: lightblue;
+  bottom: 40px;
+  right: 50px;
+  border-radius: 60px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+.gotopbtn:hover {
+  background-color: #004F99;
+}
+
+#home {
+  height: 100vh;
+  background-image: url('2os.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#home p {
+  word-spacing: 2px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+#about {
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  width: 90%;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  word-spacing: 1px;
+  font-size: 15px;
+  color: #000000;
+}
+
+#members {
+  padding: 40px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#members img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#members h2 {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#members ul {
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#members li {
+  flex-basis: 31%;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#members li:hover {
+  transform: scale(1.12);
+}
+
+#members p {
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text1 {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text2 {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text3 {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text4 {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text5 {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text6 {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text7 {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text8 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text8 {
+  opacity: 1;
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay .text9 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.overlay:hover .text9 {
+  opacity: 1;
+}
+
+#facts {
+  height: 1000px;
+  background-image: url('1001.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#facts h2 {
+  color: #fff;
+  padding-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#facts h3 {
+  text-align: left;
+  word-spacing: 5px;
+  color: #fff;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+#facts p {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  word-spacing: 5px;
+  font-size: 15px;
+  color: #fff;
+}
+#disco .album {
+  display: inline-block;
+  margin-left: 63px;
+}
+
+#disco .album img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#disco .album img:hover{
+  transform: scale(1.12);
+}
+#disco h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  text-align: left;
+  font-size: 32px;
+}
+
+#disco .album h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: left;
+}
+
+#disco .album p {
+  margin-bottom: 40px;
+  font-size: 10px;
+  text-align: right;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer i {
+  margin: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+}
